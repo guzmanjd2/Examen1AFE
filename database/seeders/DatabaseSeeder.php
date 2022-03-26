@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             SucursalSeeder::class,
             AreaSeeder::class,
             EmpleadoSeeder::class,
+            CountrySeeder::class,
         ]);
     }
 }
