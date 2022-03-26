@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sucursal', [App\Http\Controllers\SucursalController::class, 'index']);
+Route::get('/area', [App\Http\Controllers\AreaController::class, 'index']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
