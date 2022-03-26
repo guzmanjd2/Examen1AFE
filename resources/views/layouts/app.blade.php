@@ -18,10 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -75,7 +76,8 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 " style="background: #C9FFBF; background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+        background: linear-gradient(to right, #FFAFBD, #C9FFBF); min-height: 100vh">
             @yield('content')
         </main>
     </div>
